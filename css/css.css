@@ -1,0 +1,201 @@
+.index .contenedor{
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-areas: "header header"
+                        " nav      nav "
+                        "contenido  ads"
+                        "footer  footer";
+}
+.index .contenedor .header
+{
+    background-color: bisque;
+    grid-area: header;
+}
+.index .contenedor .nav
+{
+    background-color:blueviolet;
+    grid-area: nav;
+}
+.index .contenedor .contenido
+{
+    background-color: rgb(172, 101, 20);
+    grid-area: contenido;
+}
+.index .contenedor .carousel-img {
+    height: 670px; /* Ajusta esta altura según tus necesidades */
+    object-fit: cover; /* Recorta y ajusta la imagen sin deformarla */
+}
+.index .contenedor .ads
+{
+    grid-area: ads;
+}
+.index .contenedor .footer
+{
+    grid-area: footer;
+}
+.dibujo .contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "nav"
+        "contenido"
+        "footer";
+}
+
+.dibujo .card-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* General card settings */
+.dibujo .card {
+    width: 80%;
+    background-color: rgb(144, 238, 144); /* Fondo verde claro */
+    margin-bottom: 5%;
+    border-radius: 3%;
+}
+.dibujo .card img {
+    margin:2% 0% 0% 2%;
+    width: 80%;
+    height: 200px;
+    object-fit: cover;
+}
+.arte .cuadro-celeste {
+    width: 50%; /* Cambia el ancho del contenedor según sea necesario */
+    background-color: #b3e5fc; /* Celeste pastel */
+    padding: 3%; /* Reduce el padding para hacer el contenedor más compacto */
+    border-radius: 3%;
+    margin: 3% auto; /* Centra el contenedor horizontalmente */
+    border: 1px solid #e0e0e0; /* Borde opcional para separación visual */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
+}
+
+.arte .carousel-inner img {
+    width: 80%; /* Ajusta el ancho para hacer las imágenes más pequeñas */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    max-height: 400px; /* Establece una altura máxima para las imágenes */
+    object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
+}
+
+.arte .boton-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los botones */
+    margin-top: 5%; /* Espacio entre el carrusel y los botones */
+}
+
+.arte .seccion {
+    margin-top: 20%;
+}
+
+.arte .boton-container .btn {
+    margin: 1%;
+}
+.fotografia .imagen-con-texto {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.fotografia .imagen-con-texto img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.fotografia .texto-superior {
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow:
+        -1px -1px 0 black, 
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black; /* Borde negro alrededor del texto */
+}
+.astronomia {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0c1b30; /* Fondo oscuro */
+    color: white; /* Color del texto */
+}
+.astronomia .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.astronomia .nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.astronomia .nav li {
+    margin-left: 20px;
+}
+
+.astronomia .nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.astronomia .nav a:hover {
+    background-color: #00509e; /* Azul más claro al pasar el mouse */
+}
+
+.astronomia .main-content {
+    padding: 20px;
+}
+
+.astronomia .hero {
+    background-color: #004b8d; /* Fondo para la sección hero */
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.astronomia .mission, .projects, .news {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #00509e; /* Fondo azul claro */
+    border-radius: 8px;
+}
+
+.astronomia h2 {
+    border-bottom: 2px solid white; /* Línea debajo de los títulos */
+    padding-bottom: 10px;
+}
+
+.astronomia .projects ul {
+    list-style: disc; /* Lista con viñetas */
+    margin-left: 20px; /* Indentación */
+}
+
+.astronomia .news-item {
+    margin-bottom: 15px; /* Espacio entre noticias */
+    padding: 10px;
+    background-color: #0066cc; /* Fondo diferente para las noticias */
+    border-radius: 5px;
+}
+
+.astronomia .gallery {
+    margin-top: 20px;
+}
+
+.astronomia .image-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.astronomia .image-container img {
+    width: 30%; /* Ajusta el ancho según sea necesario */
+    margin: 10px;
+    border-radius: 5px; /* Bordes redondeados para las imágenes */
+}
